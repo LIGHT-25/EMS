@@ -4,6 +4,21 @@
 
 
 *{
-background: #111;
 color: white;
+}
+
+body {
+background: #111;
+}
+
+#tasklist {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  #tasklist::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari */
+  }
+  
+#alltask::-webkit-scrollbar{
+  display: none;             /* Chrome, Safari */
 }

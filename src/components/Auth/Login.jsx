@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Login() {
 
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
     let submitHandler=(event)=>{
         event.preventDefault()
+        console.log("email :",email)
+        console.log("password  :",password)
+        setEmail("")
+        setPassword("")
     }
 
   return (
@@ -17,6 +24,10 @@ function Login() {
             placeholder="youremail@mail.com"
             name="email"
             id="email"
+            value={email}
+            onChange={(e)=>{
+              setEmail(e.target.value)
+            }}
           />
           <input
           required
@@ -25,6 +36,10 @@ function Login() {
             placeholder="Enter Password"
             name="password"
             id="password"
+            value={password}
+            onChange={(e)=>{
+              setPassword(e.target.value)
+            }}
           />
           <button
           className="outline-none bg-emerald-600 rounded-full mt-4  px-5 py-2 text-xl"

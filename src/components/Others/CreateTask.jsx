@@ -1,9 +1,16 @@
 import React from 'react'
 
 function CreateTask() {
+
+  let submitHandler=(e)=>{
+    e.preventDefault()
+  }
+
   return (
     <div className='mt-10 bg-[#2c2c2e] p-6 sm:p-10 rounded-xl shadow-md max-w-3xl mx-auto'>
-        <form className='flex flex-col gap-6'>
+        <form onSubmit={(e)=>{
+          submitHandler(e)
+        }} className='flex flex-col gap-6'>
 
           <div>
             <h3 className='font-semibold text-lg mb-1'>Task Title</h3>

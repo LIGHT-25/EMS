@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TaskList() {
+function TaskList({data}) {
   return (
     <div id='tasklist' className='overflow-x-auto h-[55%] flex items-start gap-4 mt-10 py-5 px-1 w-full'>
         <div className="flex-shrink-0 h-full w-[250px] sm:w-[300px] bg-red-400 rounded-xl p-5">

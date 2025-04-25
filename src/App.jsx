@@ -13,9 +13,11 @@ function App() {
 
   useEffect(() => {
     if (authData) {
-      const loggedInUser = localStorage.getItem("loggedInUser");
+      const loggedInUser = localStorage.getItem("loggedInUser",'');
       if (loggedInUser) {
-        setUser(loggedInUser.role);
+        const userData = JSON.parse(loggedInUser)
+        setUser(userData.role);
+        setLoggedInUserData(userData.data)
       }
     }
   }, []);
@@ -33,7 +35,7 @@ function App() {
         setLoggedInUserData(employee)
         localStorage.setItem(
           "loggedInUser",
-          JSON.stringify({ role: "employee" })
+          JSON.stringify({ role: "employee",data:employee })
         );
       }
     } else {
@@ -41,10 +43,8 @@ function App() {
     }
   };
 
-  // useEffect(()=>{
-  //   // setLocalStorage()
-  //   // getLocalStorage()
-  // })
+
+   
 
   return (
     <>

@@ -1,6 +1,6 @@
 ### Employee Mangement System 
 
- ### wrapping the app.jsx in AuthContext
+
 - using useState
 - creating employee dashboard
 - creating admin dashboard

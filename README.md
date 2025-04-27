@@ -18,12 +18,6 @@
 - setting up data in local storage
 
 
-
-Here it is, Aryan! 🔥  
-Your **professional GitHub README** for the `employee-management-system`:
-
----
-
 # 🚀 Employee Management System
 
 A full-featured **Employee Management System** built with **ReactJS**, using **Context API** and **LocalStorage** — no backend required!  

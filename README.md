@@ -63,8 +63,7 @@ Designed for Admin and Employee roles with separate dashboards, task management,
 ## 🛠️ Getting Started
 
 
-# Clone the repository
-git clone https://github.com/aryanneupane/employee-management-system.git
+
 
 
 
@@ -101,7 +100,7 @@ employee-management-system/
 
 
 
-Built by **Aryan Neupane**  
+Built by **Rupak Chatterjee**  
 As part of a **6-month journey** to become a **full-time cross-platform app developer** 🚀  
 Learning, practicing, and building every single day!
 

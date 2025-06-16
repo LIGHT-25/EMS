@@ -5,6 +5,7 @@ import Header from "./components/Others/Header";
 import AdminDashBoard from "./components/Dashboard/AdminDashBoard";
 import { getLocalStorage, setLocalStorage } from "./utils/localStorage";
 import { AuthContext } from "./context/AuthProvider";
+import Sidebar from "./components/sidebar/sidebar";
 function App() {
   const [user, setUser] = useState(null);
   const [loggedInUserData, setLoggedInUserData] = useState(null);

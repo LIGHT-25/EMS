@@ -16,9 +16,9 @@ const Sidebar = ({changeUser, data }) => {
       <nav className="flex flex-col gap-4">
         <Link to="/AdminDashBoard" className="hover:text-blue-400">📊 AdminDashBoard</Link>
         <Link to="/EmployeeDashBoard" className="hover:text-blue-400">👥 Employees</Link>
-        <Link to ="Department" className="hover:text-blue-400">📝 Department</Link>
+        <Link to ="/Department" className="hover:text-blue-400">📝 Department</Link>
         <Link to="/leave" className="hover:text-blue-400">🗓 Leaves</Link> 
-        <Link to="setting" className="hover:text-blue-400">⚙ Settings</Link>
+        <Link to="/salary" className="hover:text-blue-400">💰 salary</Link>
 
       </nav>
     </div>

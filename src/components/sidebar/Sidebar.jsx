@@ -19,9 +19,7 @@ const Sidebar = ({changeUser, data }) => {
         <Link to ="Department" className="hover:text-blue-400">📝 Department</Link>
         <Link to="/leave" className="hover:text-blue-400">🗓 Leaves</Link> 
         <Link to="setting" className="hover:text-blue-400">⚙ Settings</Link>
-        <button className="mt-auto bg-red-600 hover:bg-red-700 py-2 rounded" onClick={logOut}>
-          🔒 Logout
-        </button>
+
       </nav>
     </div>
   );

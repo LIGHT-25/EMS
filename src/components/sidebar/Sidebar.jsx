@@ -17,6 +17,7 @@ const Sidebar = ({changeUser, data }) => {
         <Link to="/AdminDashBoard" className="hover:text-blue-400">📊 AdminDashBoard</Link>
         <Link to="/EmployeeDashBoard" className="hover:text-blue-400">👥 Employees</Link>
         <Link to ="/Department" className="hover:text-blue-400">📝 Department</Link>
+        <Link to="/Remove" className="hover:text-blue-400">👥 Remove employee</Link>
         <Link to="/leave" className="hover:text-blue-400">🗓 Leaves</Link> 
         <Link to="/salary" className="hover:text-blue-400">💰 salary</Link>
 

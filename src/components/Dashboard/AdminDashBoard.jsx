@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CreateEmployee from "../Others/CreateEmployee";
+import RemoveEmployee from "../Others/RemoveEmployee";
 import Header from "../Others/Header";
 import CreateTask from "../Others/CreateTask";
 import AllTask from "../Others/AllTask";
@@ -46,7 +47,7 @@ function AdminDashBoard(props) {
             </div>
             <div className="bg-green-600 p-6 rounded-xl shadow-md">
               <h3 className="text-lg font-medium">💰 Total Salary</h3>
-              <p className="text-2xl font-bold">₹{totalSalary}</p>
+              <p className="text-2xl font-bold">₹12,00,000{totalSalary}</p>
             </div>
           </div>
 
@@ -57,6 +58,9 @@ function AdminDashBoard(props) {
 
           {/* Add Employee Section */}
           <CreateEmployee onEmployeeAdded={fetchEmployees} />
+
+          {/* Remove Employee Section */}
+          <RemoveEmployee onEmployeeRemove={fetchEmployees} />
 
           {/* Existing Sections */}
           <div className="bg-white/5 backdrop-blur-md rounded-2xl shadow-md p-6 border border-white/10">
